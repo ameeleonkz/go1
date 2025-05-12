@@ -62,7 +62,7 @@ go run cmd/api/main.go
 ```
 
 ## API Endpoints
-(подробное описание эндпоинтов см. в файле API.md)
+(подробное описание эндпоинтов см. в файле [API.md](API.md))
 
 ### Публичные эндпоинты
 
@@ -96,6 +96,9 @@ go run cmd/api/main.go
 - `GET /credits` - Получение списка кредитов
 - `GET /credits/{id}/schedule` - График платежей
 - `POST /credits/{id}/payments/{payment_id}` - Обработка платежа
+
+#### Аналитика
+- `GET /analytics?forecast_days=<days>` - получить аналитику по платежам
 
 ## Безопасность
 
